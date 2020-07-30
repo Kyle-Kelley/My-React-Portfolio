@@ -1,5 +1,5 @@
-import Link from 'next/link';
-// import Header from '../components/Header';
+import React from 'react';
+import { Link } from '@material-ui/core';
 
 const AboutPage = () => {
     return(
@@ -29,13 +29,20 @@ const AboutPage = () => {
 
         <style jsx global>{`
         html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-          background: linear-gradient(90deg, #69b7eb, #b3dbd3, #f4d6db);
+        body {    
+            @import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta&display=swap');
+            padding: 0;
+            margin: 0;
+            font-family: 'Lexend Zetta', sans-serif;
+            background: linear-gradient(90deg, #69b7eb, #b3dbd3, #f4d6db);
+            letter-spacing: .05px
+        }
+        h1 {
+            margin: 20px;
+        }
+        p { 
+            font-size: 24px;
+            margin: 14px 20px;
         }
 
         * {
