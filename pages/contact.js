@@ -24,7 +24,6 @@ class ContactMe extends Component{
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
             Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
             sans-serif;
-          background: linear-gradient(90deg, #69b7eb, #b3dbd3, #f4d6db);
         }
 
         * {

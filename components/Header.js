@@ -1,9 +1,9 @@
-import Navbar from '../components/Navbar';
+import NavMenu from './NavMenu';
 
 const Header = () => {
     return(
     <div className='Header'>
-        <Navbar />
+        <NavMenu />
     <style jsx>{`
         .Header{
             padding: 10px;

@@ -34,7 +34,6 @@ const AboutPage = () => {
             padding: 0;
             margin: 0;
             font-family: 'Lexend Zetta', sans-serif;
-            background: linear-gradient(90deg, #69b7eb, #b3dbd3, #f4d6db);
             letter-spacing: .05px
         }
         h1 {

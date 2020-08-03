@@ -33,8 +33,7 @@ export default function Home() {
           display: flex;
           flex-direction: column;
           justify-content: center;
-          align-items: center;
-          background-color: 
+          align-items: center; 
         }
         .name {
           font-size: 95px;
@@ -95,7 +94,6 @@ export default function Home() {
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
             Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
             sans-serif;
-          background: linear-gradient(90deg, #69b7eb, #b3dbd3, #f4d6db);
         }
 
         * {
