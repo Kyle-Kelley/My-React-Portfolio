@@ -3,6 +3,7 @@ import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import Link from '@material-ui/core/Link';
+import MenuIcon from '@material-ui/icons/Menu';
 
 export default function NavMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -28,7 +29,7 @@ export default function NavMenu() {
         onClick={handleClick}
         style={style}
       >
-        MENU
+        <MenuIcon fontSize="large" />
       </Button>
       <Menu
         id="simple-menu"

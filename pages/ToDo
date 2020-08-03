@@ -12,8 +12,13 @@ point domain name to deployed site (check)
 
 design header 
     - use avatar
-navbar from material UI
+navbar from material UI (check)
+navbar icon
 icons for navbar
+    - Github
+    - LinkedIn
+    - Podcasts
+    - Instagram
 remove blog
 
 style about me page (check)
@@ -22,7 +27,8 @@ add links to contact page
     - can I put an actual email prompt?
     - Github
     - LinkedIn
-    - podcasts
+    - Podcasts
+    - Instagram
 write code for blog page
 add images to gallery page
 
