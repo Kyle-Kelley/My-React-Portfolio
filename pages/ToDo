@@ -1,36 +1,35 @@
 setup github repo (check)
 push nextjs project to github (check)
 design landing page (check)
-
 write code for landing page (check)
-    finish navbar (Material UI) (check)
-
+finish navbar (Material UI) (check)
 sign up for vercel (check)
 deploy on vercel (check)
 purchase domain name on hover.com (check)
 point domain name to deployed site (check)
-
 design header 
 navbar from material UI (check)
 navbar icon (check)
 icons for navbar (check)
-icons for contact page
-    - Github
-    - LinkedIn
-    - Podcasts
-    - Instagram
 remove blog (check)
-
 style about me page (check)
-add links to contact page
-    - can I put an actual call prompt?
-    - can I put an actual email prompt?
-    - Github
-    - LinkedIn
-    - Podcasts
-    - Instagram
 
-add images to gallery page
+8-4-2020 = {
+    icons for contact page (check)
+        - Github (check)
+        - LinkedIn (check)
+        - Podcasts (check)
+        - Instagram (check)
+    add links to contact page
+        - can I put an actual call prompt? => (check)
+        - can I put an actual email prompt? => mailto link
+        - Github (check)
+        - LinkedIn (check)
+        - Podcasts (check)
+        - Instagram (check)
+    download next-images package
+    add images to gallery page
+}
 
 
 
