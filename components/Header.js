@@ -1,8 +1,11 @@
 import NavMenu from './NavMenu';
+import React from 'react';
+
 
 const Header = () => {
+
     return(
-    <div className='Header'>
+    <div>
         <NavMenu />
     <style jsx>{`
         .Header{

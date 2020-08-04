@@ -4,6 +4,11 @@ import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import Link from '@material-ui/core/Link';
 import MenuIcon from '@material-ui/icons/Menu';
+import HomeIcon from '@material-ui/icons/Home';
+import InfoIcon from '@material-ui/icons/Info';
+import ContactsIcon from '@material-ui/icons/Contacts';
+import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
+import WorkIcon from '@material-ui/icons/Work';
 
 export default function NavMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -16,9 +21,7 @@ export default function NavMenu() {
     setAnchorEl(null);
   };
   const style = {
-    fontSize: '16px',
-    fontWeight: 600,
-    padding: '15px'
+    margin: '15px'
   }
 
   return (
@@ -38,11 +41,11 @@ export default function NavMenu() {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose}><Link href='/'><a>Home</a></Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link href='/about'><a>About Me</a></Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link href='/contact'><a>Contact</a></Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link href='/gallery'><a>Gallery</a></Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link href='/projects'><a>Projects</a></Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link href='/'><a><HomeIcon fontSize="large" /></a></Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link href='/about'><a><InfoIcon fontSize='large' /></a></Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link href='/contact'><a><ContactsIcon fontSize='large' /></a></Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link href='/gallery'><a><PhotoLibraryIcon fontSize='large' /></a></Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link href='/projects'><a><WorkIcon fontSize='large' /></a></Link></MenuItem>
       </Menu>
     </div>
   );
