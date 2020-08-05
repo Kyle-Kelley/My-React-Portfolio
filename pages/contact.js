@@ -34,8 +34,8 @@ class ContactMe extends Component{
             <div>
                 <Paper elevation={3} style={paperStyles}>
                     <h1>Contact me directly:</h1>
-                    <p><Link href='tel:{this.state.phone}'><PhoneIphoneIcon fontSize='large' /></Link></p>
-                    <p><Link href='mailto:{this.state.email}'><EmailIcon fontSize='large' /></Link></p>
+                    <p><Link href='tel:2692405794'><PhoneIphoneIcon fontSize='large' /> : {this.state.phone}</Link></p>
+                    <p><Link href='mailto:kylekelley711@gmail.com'><EmailIcon fontSize='large' /> : {this.state.email}</Link></p>
                 </Paper>
                 <Paper elevation={3} style={paperStyles}>
                     <h1>View my work:</h1>

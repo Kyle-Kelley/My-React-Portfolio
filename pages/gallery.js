@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import ImgContainer from '../components/ImgContainer';
 
 class Gallery extends Component {
     constructor(props){
@@ -8,6 +9,7 @@ class Gallery extends Component {
         return(
             <div>
                 <h1>Pictures of me!</h1>
+                <ImgContainer />
             <style jsx global>{`
                     html,
                     body {
