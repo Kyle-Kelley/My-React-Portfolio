@@ -1,27 +1,40 @@
 import React from 'react';
 import ImgCard from './ImgCard';
-import baliCafe from 'public/bali-cafe.JPG';
-import beachPic from 'public/beach.JPG';
-import cyclingTrip from 'public/cycling-trip.JPG';
-import familyRoadTrip from 'public/family-road-trip.jpg';
-import Headshot from 'public/headshot.png';
-import paintball from 'public/paintball.jpg';
-import pballGun from 'public/pball-gun.jpg';
-import spartanBoys from 'public/spartan-boys.JPG';
+
+
+
+// const baliCafe = [{ src: 'bali-cafe.JPG' }]
+// const beachPic = [{ src: 'beach.JPG' }];
+// const cyclingTrip = [{ src: 'cycling-trip.JPG' }];
+// const familyRoadTrip = [{ src: 'family-road-trip.jpg' }];
+// const Headshot = [{ src: 'headshot.png' }];
+// const paintball = [{ src: 'paintball.jpg' }];
+// const pballGun = [{ src: 'pball-gun.jpg' }];
+// const spartanBoys = [{ src: 'spartan-boys.JPG' }];
+
 
 const ImgContainer = () => {
     return(
         <div>
-            <ImgCard src={baliCafe} alt='me at a Bali cafe' />
-            <ImgCard src={beachPic} alt='pic on the beach' />
-            <ImgCard src={cyclingTrip} alt='end of cycling trip' />
-            <ImgCard src={familyRoadTrip} alt='me, brynn, and frank in the car' />
-            <ImgCard src={Headshot} alt='my headshot' />
-            <ImgCard src={paintball} alt='playing paintball' />
-            <ImgCard src={pballGun} alt='with paintball gun' />
-            <ImgCard src={spartanBoys} alt='me and the guys after a race' />
+            <ImgCard src='bali-cafe.JPG' alt='me at a Bali cafe' />
+            <ImgCard src='beach.JPG' alt='pic on the beach' />
+            <ImgCard src='cycling-trip.JPG' alt='end of cycling trip' />
+            <ImgCard src='family-road-trip.jpg' alt='me, brynn, and frank in the car' />
+            <ImgCard src='headshot.png' alt='my headshot' />
+            <ImgCard src='paintball.jpg' alt='playing paintball' />
+            <ImgCard src='pball-gun.jpg' alt='with paintball gun' />
+            <ImgCard src='spartan-boys.JPG' alt='me and the guys after a race' />
         </div>
     )
 }
 
 export default ImgContainer;
+
+// 'public/bali-cafe.JPG'
+// 'public/beach.JPG'
+// 'public/cycling-trip.JPG'
+// 'public/family-road-trip.jpg'
+// 'public/headshot.png'
+// 'public/paintball.jpg'
+// 'public/pball-gun.jpg'
+// 'public/spartan-boys.JPG'

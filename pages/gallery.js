@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+// import ImgCard from '../components/ImgCard';
 import ImgContainer from '../components/ImgContainer';
 
 class Gallery extends Component {

@@ -41,11 +41,11 @@ export default function NavMenu() {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose}><Link href='/'><a><HomeIcon fontSize="large" /></a></Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link href='/about'><a><InfoIcon fontSize='large' /></a></Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link href='/contact'><a><ContactsIcon fontSize='large' /></a></Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link href='/gallery'><a><PhotoLibraryIcon fontSize='large' /></a></Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link href='/projects'><a><WorkIcon fontSize='large' /></a></Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link href='/'><HomeIcon fontSize="large" /></Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link href='/about'><InfoIcon fontSize='large' /></Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link href='/contact'><ContactsIcon fontSize='large' /></Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link href='/gallery'><PhotoLibraryIcon fontSize='large' /></Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link href='/projects'><WorkIcon fontSize='large' /></Link></MenuItem>
       </Menu>
     </div>
   );

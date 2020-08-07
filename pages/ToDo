@@ -14,7 +14,7 @@ icons for navbar (check)
 remove blog (check)
 style about me page (check)
 
-8-4-2020 = {
+
     icons for contact page (check)
         - Github (check)
         - LinkedIn (check)
@@ -29,6 +29,13 @@ style about me page (check)
         - Instagram (check)
     download next-images package
     add images to gallery page
+
+
+8-6-20 = {
+    style imgCard
+    style imgContainer
+    fix mailto link
+    debug images
 }
 
 
