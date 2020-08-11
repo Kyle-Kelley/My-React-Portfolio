@@ -14,7 +14,7 @@ import EmailIcon from '@material-ui/icons/Email';
 
 const MyPaper = styled(Paper)({
         width: '30vw',
-        height: '15vh',
+        height: '100%',
         margin: '50px auto',
         padding: '25px',
         background: 'linear-gradient(90deg, #f4d6db, #b3dbd3, #69b7eb)',
@@ -25,9 +25,11 @@ const MyPaper = styled(Paper)({
         justifyContent: 'center',
         alignItems: 'center'
 });
-
+// padding must disappear on mobile
 const MyLink = styled(Link)({
     padding: '20px',
+    marginLeft: 'auto',
+    marginRight: 'auto',
 });
 
 class ContactMe extends Component{
@@ -75,6 +77,11 @@ class ContactMe extends Component{
         }
         h1 {
             text-align: center;
+        }
+        @media (max-width: 600px) {
+            h1{
+                font-size: 1.2rem;
+            }
         }
 
         * {
