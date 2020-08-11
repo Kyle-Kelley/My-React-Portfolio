@@ -23,6 +23,10 @@ const MyPaper = styled(Paper)({
         textAlign: 'center'
 });
 
+const MyLink = styled(Link)({
+    padding: '10px'
+});
+
 class ContactMe extends Component{
     constructor(props){
         super(props);
@@ -41,18 +45,18 @@ class ContactMe extends Component{
                 <MyPaper elevation={3}>
                     <h1>Contact me directly:</h1>
                     <Typography>
-                        <Link href='tel:2692405794' color='primary' ><PhoneIphoneIcon fontSize='large' /> : {this.state.phone}</Link>
-                        <Link href='mailto:kylekelley711@gmail.com' color='primary' ><EmailIcon fontSize='large' /> : {this.state.email}</Link>
+                        <MyLink href='tel:2692405794' color='primary' ><PhoneIphoneIcon fontSize='large' /> : {this.state.phone}</MyLink>
+                        <MyLink href='mailto:kylekelley711@gmail.com' color='primary' ><EmailIcon fontSize='large' /> : {this.state.email}</MyLink>
                     </Typography>
                     
                 </MyPaper>
                 <MyPaper elevation={3}>
                     <h1>View my work:</h1>
                     <Typography>
-                        <Link href={this.state.Github} color='primary' ><GitHubIcon fontSize='large' /></Link>
-                        <Link href={this.state.Instagram} color='primary' ><InstagramIcon fontSize='large' /></Link>
-                        <Link href={this.state.LinkedIn} color='primary' ><LinkedInIcon fontSize='large' /></Link>
-                        <Link href={this.state.Podcast} color='primary' ><RadioIcon fontSize='large' /></Link>
+                        <MyLink href={this.state.Github} color='primary' ><GitHubIcon fontSize='large' /></MyLink>
+                        <MyLink href={this.state.Instagram} color='primary' ><InstagramIcon fontSize='large' /></MyLink>
+                        <MyLink href={this.state.LinkedIn} color='primary' ><LinkedInIcon fontSize='large' /></MyLink>
+                        <MyLink href={this.state.Podcast} color='primary' ><RadioIcon fontSize='large' /></MyLink>
                     </Typography>
                     
                 </MyPaper>

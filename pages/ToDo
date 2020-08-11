@@ -34,11 +34,11 @@ style about me page (check)
 8-10-20 = (week of) => {
     re-size about me text (check)
     about me title restyle (check)
-    style contact page
+    style contact page (check)
     onhover descriptions in NavMenu
-    style imgCard
+    style imgCard 
     style imgContainer
-    fix mailto link
+    fix mailto link (check)
     debug images
     add more images
     move ToDo App over to projects page
