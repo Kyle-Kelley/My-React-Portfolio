@@ -13,18 +13,21 @@ import EmailIcon from '@material-ui/icons/Email';
 
 
 const MyPaper = styled(Paper)({
-        width: '50vw',
-        height: '25vh',
+        width: '30vw',
+        height: '15vh',
         margin: '50px auto',
         padding: '25px',
         background: 'linear-gradient(90deg, #f4d6db, #b3dbd3, #69b7eb)',
         borderRadius: '8px',
         boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
-        textAlign: 'center'
+        textAlign: 'center',
+        display: 'block',
+        justifyContent: 'center',
+        alignItems: 'center'
 });
 
 const MyLink = styled(Link)({
-    padding: '20px'
+    padding: '20px',
 });
 
 class ContactMe extends Component{
@@ -72,7 +75,6 @@ class ContactMe extends Component{
         }
         h1 {
             text-align: center;
-            margin-bottom: 50px;
         }
 
         * {
