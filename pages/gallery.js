@@ -20,6 +20,12 @@ class Gallery extends Component {
                         Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
                         sans-serif;
                     }
+                    h1 {
+                        @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+                        font-family: 'Permanent Marker', cursive;
+                        text-align: center;
+                        font-size: 70px;
+                    }
 
                     * {
                     box-sizing: border-box;

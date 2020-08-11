@@ -9,9 +9,12 @@ const Projects = () => {
         body {
           padding: 0;
           margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
+          @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+          font-family: 'Permanent Marker', cursive;
+        }
+        h1 {
+          font-size: 70px;
+          text-align: center;
         }
 
         * {

@@ -37,11 +37,13 @@ const AboutPage = () => {
             letter-spacing: .05px
         }
         h1 {
+            @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+            font-family: 'Permanent Marker', cursive;
             text-align: center;
-            font-size: 40px;
+            font-size: 70px;
         }
         p { 
-            font-size: 20px;
+            font-size: 30px;
             margin: 20px 50px;
             text-align: center;
         }

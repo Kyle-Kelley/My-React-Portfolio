@@ -39,13 +39,14 @@ export default function Home() {
           font-size: 95px;
           font-family: 'Permanent Marker', cursive;
           letter-spacing: 2px;
-          margin: 40px;
+          text-align: center;
         }
         .devTitle {
           font-size: 45px;
           font-family: 'Permanent Marker', cursive;
           letter-spacing: 2px;
           margin: 15px;
+          text-align: center;
         }
         main {
           padding: 5rem 0;

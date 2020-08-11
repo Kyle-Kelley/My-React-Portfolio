@@ -20,7 +20,7 @@ style about me page (check)
         - LinkedIn (check)
         - Podcasts (check)
         - Instagram (check)
-    add links to contact page
+    add links to contact page (check)
         - can I put an actual call prompt? => (check)
         - can I put an actual email prompt? => mailto link
         - Github (check)
@@ -43,6 +43,7 @@ style about me page (check)
     add more images
     move ToDo App over to projects page
     Make Responsive
+    change texts to text-align instead of margins
 }
 
 

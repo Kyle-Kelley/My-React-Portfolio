@@ -24,7 +24,7 @@ const MyPaper = styled(Paper)({
 });
 
 const MyLink = styled(Link)({
-    padding: '10px'
+    padding: '20px'
 });
 
 class ContactMe extends Component{
@@ -45,8 +45,8 @@ class ContactMe extends Component{
                 <MyPaper elevation={3}>
                     <h1>Contact me directly:</h1>
                     <Typography>
-                        <MyLink href='tel:2692405794' color='primary' ><PhoneIphoneIcon fontSize='large' /> : {this.state.phone}</MyLink>
-                        <MyLink href='mailto:kylekelley711@gmail.com' color='primary' ><EmailIcon fontSize='large' /> : {this.state.email}</MyLink>
+                        <MyLink href='tel:2692405794' color='primary' ><PhoneIphoneIcon fontSize='large' /></MyLink>
+                        <MyLink href='mailto:kylekelley711@gmail.com' color='primary' ><EmailIcon fontSize='large' /></MyLink>
                     </Typography>
                     
                 </MyPaper>
@@ -72,6 +72,7 @@ class ContactMe extends Component{
         }
         h1 {
             text-align: center;
+            margin-bottom: 50px;
         }
 
         * {
