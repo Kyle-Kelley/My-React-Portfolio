@@ -16,15 +16,19 @@ const useStyles = makeStyles({
     },
     imgStyle: {
         display: 'block',
-        // margin: '15px auto 10px auto',
-        maxWidth: '90%',
-        maxHeight: '90%',
+        width: '90%',
+        height: 'auto',
         border: '1px solid #FE6B8B',
         borderRadius: '10px',
-        padding: '0'
+        padding: '0',
+        marginTop: '15px',
+        marginBottom: 'auto',
+        marginLeft: 'auto',
+        marginRight: 'auto'
     },
     cardContent: {
-        padding: '0px'
+        padding: '0px',
+        margin: '0px',
     }
 });
 

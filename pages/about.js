@@ -37,11 +37,13 @@ const AboutPage = () => {
             letter-spacing: .05px
         }
         h1 {
-            margin: 20px;
+            text-align: center;
+            font-size: 40px;
         }
         p { 
-            font-size: 24px;
-            margin: 14px 20px;
+            font-size: 20px;
+            margin: 20px 50px;
+            text-align: center;
         }
 
         * {

@@ -31,11 +31,18 @@ style about me page (check)
     add images to gallery page
 
 
-8-6-20 = {
+8-10-20 = (week of) => {
+    re-size about me text (check)
+    about me title restyle (check)
+    style contact page
+    onhover descriptions in NavMenu
     style imgCard
     style imgContainer
     fix mailto link
     debug images
+    add more images
+    move ToDo App over to projects page
+    Make Responsive
 }
 
 
