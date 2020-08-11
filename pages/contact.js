@@ -49,10 +49,10 @@ class ContactMe extends Component{
                 <MyPaper elevation={3}>
                     <h1>View my work:</h1>
                     <Typography>
-                        <Link href={this.state.Github} color='primary' ><a><GitHubIcon fontSize='large' /></a></Link>
-                        <Link href={this.state.Instagram} color='primary' ><a><InstagramIcon fontSize='large' /></a></Link>
-                        <Link href={this.state.LinkedIn} color='primary' ><a><LinkedInIcon fontSize='large' /></a></Link>
-                        <Link href={this.state.Podcast} color='primary' ><a><RadioIcon fontSize='large' /></a></Link>
+                        <Link href={this.state.Github} color='primary' ><GitHubIcon fontSize='large' /></Link>
+                        <Link href={this.state.Instagram} color='primary' ><InstagramIcon fontSize='large' /></Link>
+                        <Link href={this.state.LinkedIn} color='primary' ><LinkedInIcon fontSize='large' /></Link>
+                        <Link href={this.state.Podcast} color='primary' ><RadioIcon fontSize='large' /></Link>
                     </Typography>
                     
                 </MyPaper>

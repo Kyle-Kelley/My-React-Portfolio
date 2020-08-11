@@ -34,7 +34,6 @@ const useStyles = makeStyles({
 
 const ImgCard = ({ src, alt }) => {
     const classes = useStyles();
-
     return(
         <Card className={classes.root}>
             <CardContent className={classes.cardContent}>
