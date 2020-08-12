@@ -1,12 +1,7 @@
-import React, { Component } from 'react';
-// import ImgCard from '../components/ImgCard';
+import React from 'react';
 import ImgContainer from '../components/ImgContainer';
 
-class Gallery extends Component {
-    constructor(props){
-        super(props);
-    }
-    render(){
+const Gallery = () => {
         return(
             <div>
                 <h1>Pictures of me!</h1>
@@ -16,13 +11,10 @@ class Gallery extends Component {
                     body {
                     padding: 0;
                     margin: 0;
-                    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-                        Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-                        sans-serif;
+                    @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+                    font-family: 'Permanent Marker', cursive;
                     }
                     h1 {
-                        @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-                        font-family: 'Permanent Marker', cursive;
                         text-align: center;
                         font-size: 70px;
                     }
@@ -34,6 +26,5 @@ class Gallery extends Component {
             </div>
         )
     }
-}
 
 export default Gallery;
