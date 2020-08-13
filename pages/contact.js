@@ -12,7 +12,8 @@ import EmailIcon from '@material-ui/icons/Email';
 
 
 
-const MyPaper = styled(Paper)({
+const MyPaper = styled(Paper)`
+${({ theme }) => `
         width: '30vw',
         height: '100%',
         margin: '50px auto',
@@ -24,12 +25,32 @@ const MyPaper = styled(Paper)({
         display: 'block',
         justifyContent: 'center',
         alignItems: 'center'
-});
+
+        ${theme.breakpoints.down('sm')} {
+            padding: 15px;
+        }
+`}
+`;
+
+// styled(Paper)({
+//         width: '30vw',
+//         height: '100%',
+//         margin: '50px auto',
+//         padding: '25px',
+//         background: 'linear-gradient(90deg, #f4d6db, #b3dbd3, #69b7eb)',
+//         borderRadius: '8px',
+//         boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
+//         textAlign: 'center',
+//         display: 'block',
+//         justifyContent: 'center',
+//         alignItems: 'center'
+// });
 // padding must disappear on mobile
 const MyLink = styled(Link)({
     padding: '20px',
     marginLeft: 'auto',
     marginRight: 'auto',
+    textAlign: 'center'
 });
 
 class ContactMe extends Component{

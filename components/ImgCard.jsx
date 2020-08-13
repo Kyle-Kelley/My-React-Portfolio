@@ -12,7 +12,7 @@ const useStyles = makeStyles({
         margin: '15px',
         borderRadius: '10px',
         padding: '0',
-        justifyItems: 'center'
+        textAlign: 'center'
     },
     imgStyle: {
         display: 'block',
