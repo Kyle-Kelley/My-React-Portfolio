@@ -1,10 +1,11 @@
 import React from 'react';
+import TodoApp from '../components/TodoApp';
 
 const Todo = () => {
     return(
         <div>
             <h1>
-                hello!
+                <TodoApp />
             </h1>
             <style jsx global>{`
         html,
