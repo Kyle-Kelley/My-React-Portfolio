@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import TodoList from './TodoList';
 import TodoForm from './TodoForm';
+import { styled } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
 import AppBar from '@material-ui/core/AppBar';
@@ -8,17 +9,37 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Grid from '@material-ui/core/Grid';
 import uuid from 'react-uuid';
 
+const MyPaper = styled(Paper)({
+    width: '30vw',
+    height: '100%',
+    margin: '50px auto',
+    padding: '15px',
+    background: 'linear-gradient(90deg, #f4d6db, #b3dbd3, #69b7eb)',
+    borderRadius: '8px',
+    boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
+    textAlign: 'center',
+    display: 'block',
+    justifyContent: 'center',
+    alignItems: 'center'
+});
+
 function TodoApp(){
-    const initialTodos = React.useEffect(() => {
-        JSON.parse(window.localStorage.getItem('todos') || '[]')
-    });
+    // const initialTodos = React.useEffect(() => {
+    //     JSON.parse(window.localStorage.getItem('todos') || '[]')
+    // });
+    const [todos, setTodos] = useState([]);
+    useEffect(() => {
+        const initialTodos = JSON.parse(window.localStorage.getItem('todos') || '[]')
+        setTodos([initialTodos])
+    }, []);
+
     // const initialTodos = [
     //     { id: uuid(), task: 'Write Blog', completed: false },
     //     { id: uuid(), task: 'Clean House', completed: false },
     //     { id: uuid(), task: 'Record Podcast', completed: false },
     //     { id: uuid(), task: 'Write Brynn Workouts', completed: false },
     // ];
-    const [todos, setTodos] = useState(initialTodos);
+
     const addTodo = newTodoText => {
         setTodos([...todos, {id: uuid(), task: newTodoText, completed: false}])
     }
@@ -44,7 +65,7 @@ function TodoApp(){
             setTodos(updatedTodos);
     }
     return (
-        <Paper
+        <MyPaper
             style={{
                 padding: 0,
                 margin: 0,
@@ -69,7 +90,7 @@ function TodoApp(){
                     />
                 </Grid>
             </Grid>
-        </Paper>
+        </MyPaper>
     )
 };
 export default TodoApp;
