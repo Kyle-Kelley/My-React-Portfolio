@@ -10,7 +10,7 @@ import Grid from '@material-ui/core/Grid';
 import uuid from 'react-uuid';
 
 const MyPaper = styled(Paper)({
-    width: '30vw',
+    width: '50vw',
     height: '100%',
     margin: '50px auto',
     padding: '15px',
@@ -66,20 +66,14 @@ function TodoApp(){
     }
     return (
         <MyPaper
-            style={{
-                padding: 0,
-                margin: 0,
-                height: '100vh',
-                backgroundColor: '#fafafa'
-            }}
-            elevation={0} 
+            elevation={3} 
         >
             <AppBar color='primary' position='static' style={{height: '64px'}}>
                 <Toolbar>
-                    <Typography color='inherit'>TODOS WITH HOOKS</Typography>
+                    <Typography color='inherit'>TODO LIST</Typography>
                 </Toolbar>
             </AppBar>
-            <Grid container justify='center' style={{marginTop: '1rem'}}>
+            <Grid container style={{marginTop: '1rem'}}>
                 <Grid item xs={11} md={8} lg={4}>
                     <TodoForm addTodo={addTodo} />
                     <TodoList 

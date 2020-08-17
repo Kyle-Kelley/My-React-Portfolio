@@ -6,9 +6,8 @@ import useInputState from '../hooks/useInputState';
 
 
 const MyPaper = styled(Paper)({
-    width: '30vw',
-    height: '100%',
-    margin: '50px auto',
+    width: '48vw',
+    margin: '5px auto',
     padding: '15px',
     background: 'linear-gradient(90deg, #f4d6db, #b3dbd3, #69b7eb)',
     borderRadius: '8px',
@@ -22,7 +21,7 @@ const MyPaper = styled(Paper)({
 function TodoForm({ addTodo }) {
     const [value, handleChange, reset] = useInputState("");
     return(
-         <MyPaper style={{margin: '1rem 0', padding: '0 1rem'}}>
+         <MyPaper>
             <form onSubmit={(e) => {
                  e.preventDefault();
                  addTodo(value);
