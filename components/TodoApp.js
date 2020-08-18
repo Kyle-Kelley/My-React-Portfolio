@@ -63,9 +63,9 @@ function TodoApp(){
         <MyPaper
             elevation={3} 
         >
-            <MyAppBar  position='static' style={{height: '64px'}}>
+            <MyAppBar  position='static'>
                 <Toolbar>
-                    <Typography style={{fontSize: '1.5rem', fontWeight: '600'}}>TODO LIST</Typography>
+                    <Typography variant='h4'>TODO LIST</Typography>
                 </Toolbar>
             </MyAppBar>
             <Grid container justify='center' style={{marginTop: '1rem'}}>

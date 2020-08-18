@@ -39,7 +39,8 @@ style about me page (check)
 8-16-20 = (week of) => {
     move ToDo App over to projects page (check)
     add initial text to first todo item
-    style ToDo App 
+    style ToDo App (check)
+    _document.js implementation
     onhover descriptions in NavMenu
     FIX CONTACT PAGE BUG
     debug images
