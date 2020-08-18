@@ -6,10 +6,10 @@ import Divider from '@material-ui/core/Divider';
 import Todo from './Todo';
 
 const MyPaper = styled(Paper)({
-    width: '48vw',
-    margin: '10px auto 15px auto',
-    padding: '5px',
-    background: '#b3dbd3'
+    background: 'linear-gradient(90deg, #f4d6db, #b3dbd3, #69b7eb)',
+    borderRadius: '8px',
+    boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)', 
+    padding: '5px'
 })
 
 function TodoList({ todos, removeTodo, toggleTodo, editTodo }) {

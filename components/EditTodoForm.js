@@ -1,6 +1,11 @@
 import React from 'react';
+// import { styled } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import useInputState from '../hooks/useInputState';
+
+// const MyTextField = styled(TextField)({
+//     padding: '15px'
+// })
 
 function EditTodoForm({ id, task, editTodo, toggleEditForm }){
     const [value, handleChange, reset] = useInputState(task)

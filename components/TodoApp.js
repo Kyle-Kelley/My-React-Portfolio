@@ -11,34 +11,29 @@ import uuid from 'react-uuid';
 
 const MyPaper = styled(Paper)({
     width: '50vw',
-    height: '100%',
     margin: '50px auto',
     padding: '15px',
     background: 'linear-gradient(90deg, #f4d6db, #b3dbd3, #69b7eb)',
     borderRadius: '8px',
     boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
-    textAlign: 'center',
-    display: 'block',
-    justifyContent: 'center',
-    alignItems: 'center'
 });
 
+const MyAppBar = styled(AppBar)({
+    backgroundColor: '#b3dbd3',
+    color: '#69b7eb',
+    borderRadius: '8px',
+    alignItems: 'center',
+    fontSize: '20px'
+});
+
+
+
 function TodoApp(){
-    // const initialTodos = React.useEffect(() => {
-    //     JSON.parse(window.localStorage.getItem('todos') || '[]')
-    // });
     const [todos, setTodos] = useState([]);
     useEffect(() => {
         const initialTodos = JSON.parse(window.localStorage.getItem('todos') || '[]')
         setTodos([initialTodos])
     }, []);
-
-    // const initialTodos = [
-    //     { id: uuid(), task: 'Write Blog', completed: false },
-    //     { id: uuid(), task: 'Clean House', completed: false },
-    //     { id: uuid(), task: 'Record Podcast', completed: false },
-    //     { id: uuid(), task: 'Write Brynn Workouts', completed: false },
-    // ];
 
     const addTodo = newTodoText => {
         setTodos([...todos, {id: uuid(), task: newTodoText, completed: false}])
@@ -68,13 +63,13 @@ function TodoApp(){
         <MyPaper
             elevation={3} 
         >
-            <AppBar color='primary' position='static' style={{height: '64px'}}>
+            <MyAppBar  position='static' style={{height: '64px'}}>
                 <Toolbar>
-                    <Typography color='inherit'>TODO LIST</Typography>
+                    <Typography style={{fontSize: '1.5rem', fontWeight: '600'}}>TODO LIST</Typography>
                 </Toolbar>
-            </AppBar>
-            <Grid container style={{marginTop: '1rem'}}>
-                <Grid item xs={11} md={8} lg={4}>
+            </MyAppBar>
+            <Grid container justify='center' style={{marginTop: '1rem'}}>
+                <Grid item xs={12} sm={12} md={12} lg={12}>
                     <TodoForm addTodo={addTodo} />
                     <TodoList 
                         todos={todos} 
@@ -94,3 +89,5 @@ export default TodoApp;
 //     -TodoList
 //         -TodoItem
 //             id, task, completed
+
+// , minHeight: '100vh'

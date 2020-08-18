@@ -6,16 +6,12 @@ import useInputState from '../hooks/useInputState';
 
 
 const MyPaper = styled(Paper)({
-    width: '48vw',
+    // width: '48vw',
     margin: '5px auto',
-    padding: '15px',
+    padding: '0 15px 0 15px',
     background: 'linear-gradient(90deg, #f4d6db, #b3dbd3, #69b7eb)',
     borderRadius: '8px',
     boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
-    textAlign: 'center',
-    display: 'block',
-    justifyContent: 'center',
-    alignItems: 'center'
 });
 
 function TodoForm({ addTodo }) {
