@@ -1,29 +1,47 @@
 import React from 'react';
-import Container from '@material-ui/core/Container';
+import { styled } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
+import Grid from '@material-ui/core/Grid';
 import Link from '@material-ui/core/Link';
+import Paper from '@material-ui/core/Paper';
 
+
+const MyPaper = styled(Paper)({
+  width: '30vw',
+  height: '100%',
+  margin: '50px auto',
+  background: '#b3dbd3',
+  border: '2px solid orange',
+  borderRadius: '8px',
+  boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
+});
+
+// style={{ 
+//   backgroundColor: '#b3dbd3',
+//   height: '90vh',
+//   border: '2px solid orange',
+//   borderRadius: '10px'
+//   }}
 
 const Projects = () => {
     return(
         <div>
             <h1>projects!</h1>
-            <Container maxWidth='md'>
-            <Typography 
-                component="div" 
-                style={{ 
-                  backgroundColor: '#b3dbd3',
-                  height: '90vh',
-                  border: '2px solid orange',
-                  borderRadius: '10px'
-                  }}>
-              <h1>
-                <Link href='/todo-app'>
-                  TodoApp
-                </Link>
-              </h1>
-            </Typography>
-            </Container>
+            <MyPaper elevation={3}>
+              <Grid container>
+                <Grid item xs={12} sm={12} md={12} lg={12} >
+                    <Typography 
+                      component="div" 
+                    >
+                    <h1>
+                      <Link href='/todo-app'>
+                        TodoApp
+                      </Link>
+                    </h1>
+                  </Typography>
+                </Grid>
+              </Grid>
+            </MyPaper>
         <style jsx global>{`
         html,
         body {
@@ -33,7 +51,7 @@ const Projects = () => {
           font-family: 'Permanent Marker', cursive;;
         }
         h1 {
-          font-size: 70px;
+          font-size: 3rem;
           text-align: center;
         }
 
