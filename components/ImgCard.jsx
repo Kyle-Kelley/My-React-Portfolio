@@ -5,11 +5,10 @@ import CardContent from '@material-ui/core/CardContent';
 
 const useStyles = makeStyles({
     root: {
-        maxWidth: '30%',
-        maxHeight: '30%',
+        maxWidth: '80%',
         display: 'inline-flex',
         background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
-        margin: '15px',
+        // margin: '15px',
         borderRadius: '10px',
         padding: '0',
         textAlign: 'center'

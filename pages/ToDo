@@ -40,10 +40,12 @@ style about me page (check)
     move ToDo App over to projects page (check)
     add initial text to first todo item
     style ToDo App (check)
-    Grid container & item for contact page (?)
+    bug fix for material ui w/nextjs
+    Convert Images to Grid system
+    Grid container & item for contact page (check)
     _document.js implementation (?)
     onhover descriptions in NavMenu
-    FIX CONTACT PAGE BUG
+    FIX CONTACT PAGE BUG (check)
     debug images
     add more images
     Make Responsive
