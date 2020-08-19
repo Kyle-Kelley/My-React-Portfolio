@@ -1,4 +1,5 @@
 import { Component } from "react";
+import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
 import Paper from '@material-ui/core/Paper';
@@ -48,12 +49,12 @@ const MyPaper = styled(Paper)({
 // `;
 
 
-const MyLink = styled(Link)({
-    padding: '20px',
-    marginLeft: 'auto',
-    marginRight: 'auto',
-    textAlign: 'center'
-});
+// const MyLink = styled(Link)({
+//     padding: '20px',
+//     marginLeft: 'auto',
+//     marginRight: 'auto',
+//     textAlign: 'center'
+// });
 
 class ContactMe extends Component{
     constructor(props){
@@ -71,22 +72,49 @@ class ContactMe extends Component{
         return(
             <div>
                 <MyPaper elevation={3}>
-                    <h1>Contact me directly:</h1>
-                    <Typography>
-                        <MyLink href='tel:2692405794' color='primary' ><PhoneIphoneIcon fontSize='large' /></MyLink>
-                        <MyLink href='mailto:kylekelley711@gmail.com' color='primary' ><EmailIcon fontSize='large' /></MyLink>
-                    </Typography>
+                    <Grid container spacing={2}>
+                        <Grid item xs={12}>
+                            <h1>Contact me directly:</h1>
+                        </Grid>
+                        <Grid item xs={12} md={6}>
+                            <Typography>
+                                <Link href='tel:2692405794' color='primary' ><PhoneIphoneIcon fontSize='large' /></Link>
+                            </Typography>
+                        </Grid>
+                        <Grid item xs={12} md={6}>
+                            <Typography>
+                                <Link href='mailto:kylekelley711@gmail.com' color='primary' ><EmailIcon fontSize='large' /></Link>
+                            </Typography>
+                        </Grid>
+                    </Grid>
                     
                 </MyPaper>
                 <MyPaper elevation={3}>
-                    <h1>View my work:</h1>
-                    <Typography>
-                        <MyLink href={this.state.Github} color='primary' ><GitHubIcon fontSize='large' /></MyLink>
-                        <MyLink href={this.state.Instagram} color='primary' ><InstagramIcon fontSize='large' /></MyLink>
-                        <MyLink href={this.state.LinkedIn} color='primary' ><LinkedInIcon fontSize='large' /></MyLink>
-                        <MyLink href={this.state.Podcast} color='primary' ><RadioIcon fontSize='large' /></MyLink>
-                    </Typography>
-                    
+                    <Grid container spacing={2}>
+                        <Grid item xs={12}>
+                            <h1>View my work:</h1>
+                        </Grid>
+                        <Grid item xs={12} md={3}>
+                            <Typography>
+                                <Link href={this.state.Github} color='primary' ><GitHubIcon fontSize='large' /></Link>
+                            </Typography>
+                        </Grid>
+                        <Grid item xs={12} md={3}>
+                            <Typography>
+                                <Link href={this.state.Instagram} color='primary' ><InstagramIcon fontSize='large' /></Link>
+                            </Typography>
+                        </Grid>
+                        <Grid item xs={12} md={3}>
+                            <Typography>
+                                <Link href={this.state.LinkedIn} color='primary' ><LinkedInIcon fontSize='large' /></Link>
+                            </Typography>
+                        </Grid>
+                        <Grid item xs={12} md={3}>
+                            <Typography>
+                                <Link href={this.state.Podcast} color='primary' ><RadioIcon fontSize='large' /></Link>
+                            </Typography>
+                        </Grid>
+                    </Grid>
                 </MyPaper>
         
         <style jsx global>{`
