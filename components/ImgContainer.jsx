@@ -19,7 +19,7 @@ const ImgContainer = () => {
     return(
         <>
             <MyPaper>
-                <Grid container spacing={2} alignItems='center'>
+                <Grid container spacing={2} justify='center' alignItems='center'>
                     <Grid item xs={4}>
                         <ImgCard src='bali-cafe.JPG' alt='me at a Bali cafe' />
                     </Grid>
@@ -33,7 +33,7 @@ const ImgContainer = () => {
                         <ImgCard src='family-road-trip.jpg' alt='me, brynn, and frank in the car' />
                     </Grid>
                     <Grid item xs={4}>
-                        <ImgCard src='headshot.png' alt='my headshot' /><ImgCard src='bali-cafe.JPG' alt='me at a Bali cafe' />
+                        <ImgCard src='headshot.png' alt='my headshot' />
                     </Grid>
                     <Grid item xs={4}>
                         <ImgCard src='paintball.jpg' alt='playing paintball' />
