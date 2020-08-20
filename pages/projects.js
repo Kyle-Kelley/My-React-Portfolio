@@ -7,7 +7,8 @@ import Paper from '@material-ui/core/Paper';
 
 
 const MyPaper = styled(Paper)({
-  width: '30vw',
+  width: 'fit-content',
+  padding: '1rem',
   height: '100%',
   margin: '50px auto',
   background: '#b3dbd3',
@@ -16,12 +17,6 @@ const MyPaper = styled(Paper)({
   boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
 });
 
-// style={{ 
-//   backgroundColor: '#b3dbd3',
-//   height: '90vh',
-//   border: '2px solid orange',
-//   borderRadius: '10px'
-//   }}
 
 const Projects = () => {
     return(
@@ -31,13 +26,11 @@ const Projects = () => {
               <Grid container>
                 <Grid item xs={12} sm={12} md={12} lg={12} >
                     <Typography 
-                      component="div" 
+                      variant='h2' 
                     >
-                    <h1>
-                      <Link href='/todo-app'>
+                      <Link href='/todo-app' >
                         TodoApp
                       </Link>
-                    </h1>
                   </Typography>
                 </Grid>
               </Grid>
