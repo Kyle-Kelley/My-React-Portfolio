@@ -64,7 +64,7 @@ class ContactMe extends Component{
             email: 'kylekelley711@gmail.com',
             Github: 'https://github.com/Kyle-Kelley/My-React-Portfolio',
             Instagram: 'https://www.instagram.com/the_kyle_kelley_show/',
-            LinkedIn: 'linkedin.com/in/kyle-kelley1992',
+            LinkedIn: 'https://www.linkedin.com/in/kyle-kelley1992?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BVrK4iLTJQ6C%2FzDBClk5Z4A%3D%3D',
             Podcast: 'https://podcasts.apple.com/us/podcast/the-kyle-kelley-show/id1517902299'
         };
     }

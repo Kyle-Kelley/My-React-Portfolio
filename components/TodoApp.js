@@ -10,7 +10,7 @@ import Grid from '@material-ui/core/Grid';
 import uuid from 'react-uuid';
 
 const MyPaper = styled(Paper)({
-    width: '50vw',
+    width: '75vw',
     margin: '50px auto',
     padding: '15px',
     background: 'linear-gradient(90deg, #f4d6db, #b3dbd3, #69b7eb)',
@@ -71,12 +71,12 @@ function TodoApp(){
             <Grid container justify='center' style={{marginTop: '1rem'}}>
                 <Grid item xs={12} sm={12} md={12} lg={12}>
                     <TodoForm addTodo={addTodo} />
-                    <TodoList 
-                        todos={todos} 
-                        removeTodo={removeTodo} 
-                        toggleTodo={toggleTodo}
-                        editTodo={editTodo}
-                    />
+                    {todos && <TodoList 
+                                    todos={todos} 
+                                    removeTodo={removeTodo} 
+                                    toggleTodo={toggleTodo}
+                                    editTodo={editTodo}
+                                />}
                 </Grid>
             </Grid>
         </MyPaper>
@@ -84,10 +84,9 @@ function TodoApp(){
 };
 export default TodoApp;
 
-// -TodoApp
-//     -TodoForm
-//     -TodoList
-//         -TodoItem
-//             id, task, completed
-
-// , minHeight: '100vh'
+// {!todos && <TodoList 
+//     todos={todos} 
+//     removeTodo={removeTodo} 
+//     toggleTodo={toggleTodo}
+//     editTodo={editTodo}
+// />}
