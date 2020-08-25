@@ -35,22 +35,24 @@ style about me page (check)
     style imgCard (check)
     style imgContainer (check)
     fix mailto link (check)
-
-8-16-20 = (week of) => {
     move ToDo App over to projects page (check)
-    add initial text to first todo item
     style ToDo App (check)
     bug fix for material ui w/nextjs (check)
     Convert Images to Grid system (check)
     Grid container & item for contact page (check)
     _document.js & _app.js implementation (check)
-    onhover descriptions in NavMenu
     FIX CONTACT PAGE BUG (check)
     Re-center images in gallery (check)
+
+8-24-20 = (week of) => {
+    fix mobile TodoApp spacing 
+    add initial text to first todo item
+    onhover descriptions in NavMenu
     link to Point Break trailer 
     add more images
     Make Responsive
     make TodoApp responsive
+    SEND TO RECRUITERS
 }
 
 
