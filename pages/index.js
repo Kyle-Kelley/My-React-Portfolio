@@ -1,12 +1,11 @@
-import React from 'react';
-
+import React from "react";
 
 export default function Home() {
   return (
     <div className="container">
       <main>
-        <h1 className='name'>Kyle Kelley</h1>
-        <h2 className='devTitle'>React Developer</h2>
+        <h1 className="name">Kyle Kelley</h1>
+        <h2 className="devTitle">React Developer</h2>
       </main>
       <style jsx>{`
         .container {
@@ -15,17 +14,17 @@ export default function Home() {
           display: flex;
           flex-direction: column;
           justify-content: center;
-          align-items: center; 
+          align-items: center;
         }
         .name {
           font-size: 95px;
-          font-family: 'Permanent Marker', cursive;
+          font-family: "Permanent Marker", cursive;
           letter-spacing: 2px;
           text-align: center;
         }
         .devTitle {
           font-size: 45px;
-          font-family: 'Permanent Marker', cursive;
+          font-family: "Permanent Marker", cursive;
           letter-spacing: 2px;
           margin: 15px;
           text-align: center;
@@ -45,8 +44,8 @@ export default function Home() {
         body {
           padding: 0;
           margin: 0;
-          @import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta&display=swap');
-          font-family: 'Lexend Zetta', sans-serif;
+          @import url("https://fonts.googleapis.com/css2?family=Lexend+Zetta&display=swap");
+          font-family: "Lexend Zetta", sans-serif;
         }
 
         * {
@@ -54,5 +53,5 @@ export default function Home() {
         }
       `}</style>
     </div>
-  )
+  );
 }

@@ -1,19 +1,17 @@
-import NavMenu from './NavMenu';
-import React from 'react';
-
+import NavMenu from "./NavMenu";
+import React from "react";
 
 const Header = () => {
-
-    return(
+  return (
     <div>
-        <NavMenu />
-    <style jsx>{`
-        .Header{
-            padding: 10px;
+      <NavMenu />
+      <style jsx>{`
+        .Header {
+          padding: 10px;
         }
-    `}</style>
+      `}</style>
     </div>
-    )
-}
+  );
+};
 
 export default Header;

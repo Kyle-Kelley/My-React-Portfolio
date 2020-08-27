@@ -1,19 +1,19 @@
-import React from 'react';
-import TodoApp from '../components/TodoApp';
+import React from "react";
+import TodoApp from "../components/TodoApp";
 
 const Todo = () => {
-    return(
-        <div>
-            <h1>
-                <TodoApp />
-            </h1>
-            <style jsx global>{`
+  return (
+    <div>
+      <h1>
+        <TodoApp />
+      </h1>
+      <style jsx global>{`
         html,
         body {
           padding: 0;
           margin: 0;
-          @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-          font-family: 'Permanent Marker', cursive;;
+          @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+          font-family: "Permanent Marker", cursive;
         }
         h1 {
           font-size: 70px;
@@ -24,8 +24,8 @@ const Todo = () => {
           box-sizing: border-box;
         }
       `}</style>
-        </div>
-    )
-}
+    </div>
+  );
+};
 
 export default Todo;
