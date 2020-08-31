@@ -1,35 +1,34 @@
 import React from "react";
-import { styled } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import ImgCard from "./ImgCard";
-import Grid from "@material-ui/core/Grid";
+import GridList from "@material-ui/core/GridList";
+import GridListTile from "@material-ui/core/GridListTile";
 import Paper from "@material-ui/core/Paper";
 
-const MyPaper = styled(Paper)({
-  width: "60vw",
-  height: "100%",
-  margin: "50px auto",
-  background: "#b3dbd3",
-  border: "2px solid orange",
-  borderRadius: "8px",
-  boxShadow: "0 3px 5px 2px rgba(255, 105, 135, .3)",
-  textAlign: "center",
-  padding: "15px",
-});
-
-// make an array of the img SRC's
-// map over the array to display <ImgCard />
-// const images = [
-//   "bali-cafe.JPG",
-//   "beach.JPG",
-//   "cycling-trip.JPG",
-//   "family-road-trip.jpg",
-//   "headshot.png",
-//   "paintball.jpg",
-//   "pball-gun.jpg",
-//   "spartan-boys.JPG",
-// ];
+const useStyles = makeStyles((theme) => ({
+  root: {
+    width: "60vw",
+    height: "100%",
+    margin: "50px auto",
+    background: "#b3dbd3",
+    border: "2px solid orange",
+    borderRadius: "8px",
+    boxShadow: "0 3px 5px 2px rgba(255, 105, 135, .3)",
+    textAlign: "center",
+    padding: "15px",
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "space-around",
+    overflow: "hidden",
+  },
+  gridList: {
+    width: "100%",
+    height: "100%",
+  },
+}));
 
 const ImgContainer = () => {
+  const classes = useStyles();
   const images = [
     "bali-cafe.JPG",
     "beach.JPG",
@@ -42,24 +41,33 @@ const ImgContainer = () => {
   ];
   return (
     <>
-      <MyPaper>
-        <Grid
-          container
-          spacing={2}
-          justify="center"
-          alignItems="center"
-          direction="row"
-        >
-          <Grid item xs>
-            {images.map((src, alt) => (
-              <ul>
-                <ImgCard src={src} key={src} alt={alt} />
-              </ul>
-            ))}
-          </Grid>
-        </Grid>
-      </MyPaper>
+      <Paper className={classes.root}>
+        <GridList cellHeight={160} className={classes.gridList} cols={3}>
+          {images.map((src, alt) => (
+            <GridListTile>
+              <ImgCard src={src} key={src} alt={alt} />
+            </GridListTile>
+          ))}
+        </GridList>
+      </Paper>
     </>
+
+    // {/* <Grid
+    // container
+    // spacing={2}
+    // justify="center"
+    // alignItems="center"
+    // direction="row"
+    // >
+    // {images.map((src, alt) => (
+    //   <Grid item>
+    //     <GridList>
+    //       <ImgCard src={src} key={src} alt={alt} />
+    //     </GridList>
+    //   </Grid>
+    // ))}
+    // </Grid> */}
+
     // <>
     //   <MyPaper>
     //     <Grid container spacing={2} justify="center" alignItems="center">
