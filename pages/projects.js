@@ -11,7 +11,7 @@ const MyPaper = styled(Paper)({
   height: "100%",
   margin: "50px auto",
   background: "#b3dbd3",
-  border: "2px solid orange",
+  border: "2px solid #FE6B8B",
   borderRadius: "8px",
   boxShadow: "0 3px 5px 2px rgba(255, 105, 135, .3)",
 });
