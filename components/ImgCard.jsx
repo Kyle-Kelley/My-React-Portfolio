@@ -5,8 +5,7 @@ import CardContent from "@material-ui/core/CardContent";
 
 const useStyles = makeStyles({
   root: {
-    // maxWidth: "80%",
-    // borderRadius: "10px",
+    maxWidth: "80%",
     padding: "0",
     textAlign: "center",
   },
@@ -15,7 +14,6 @@ const useStyles = makeStyles({
     width: "100%",
     height: "auto",
     border: "1px solid #FE6B8B",
-    // borderRadius: "10px",
     padding: "0",
     margin: "0 auto auto auto",
   },
@@ -28,11 +26,6 @@ const useStyles = makeStyles({
   },
 });
 
-//
-//
-// IMG CARD BORDER NOT MARGINS AND SHIT!!!!!
-//
-//
 const ImgCard = ({ src, alt }) => {
   const classes = useStyles();
   return (
