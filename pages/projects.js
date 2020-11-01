@@ -14,6 +14,7 @@ const MyPaper = styled(Paper)({
   border: "2px solid #FE6B8B",
   borderRadius: "8px",
   boxShadow: "0 3px 5px 2px rgba(255, 105, 135, .3)",
+  textAlign: "center",
 });
 
 const Projects = () => {
@@ -25,6 +26,13 @@ const Projects = () => {
           <Grid item xs={12} sm={12} md={12} lg={12}>
             <Typography variant="h2">
               <Link href="/todo-app">TodoApp</Link>
+            </Typography>
+          </Grid>
+          <Grid item xs={12} sm={12} md={12} lg={12}>
+            <Typography variant="h2">
+              <Link href="https://brynn-kerin.net/">
+                Website w/Headless CMS (in Progress)
+              </Link>
             </Typography>
           </Grid>
         </Grid>
