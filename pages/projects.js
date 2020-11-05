@@ -31,7 +31,7 @@ const Projects = () => {
           <Grid item xs={12} sm={12} md={12} lg={12}>
             <Typography variant="h2">
               <Link href="https://brynn-kerin.net/">
-                Website w/Headless CMS (in Progress)
+                Website w/Headless CMS (in progress)
               </Link>
             </Typography>
           </Grid>
