@@ -35,6 +35,14 @@ const Projects = () => {
               </Link>
             </Typography>
           </Grid>
+          <Grid item xs={12} sm={12} md={12} lg={12}>
+            <Typography variant="h2">
+              <Link href="https://show-store.mybigcommerce.com/?ctk=362e0644-4a96-4504-8951-30725125b6b0">
+                Sample eCommerce Site =>
+              </Link>
+              <span>(preview code: mimcjmt8jw)</span>
+            </Typography>
+          </Grid>
         </Grid>
       </MyPaper>
       <style jsx global>{`
