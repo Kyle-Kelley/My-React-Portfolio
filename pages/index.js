@@ -27,15 +27,8 @@ export default function Home() {
           letter-spacing: 2px;
           text-align: center;
         }
-        .devTitle {
-          font-size: 45px;
-          font-family: "Permanent Marker", cursive;
-          letter-spacing: 2px;
-          margin: 15px;
-          text-align: center;
-        }
         main {
-          padding: 5rem 0;
+          // padding: 5rem 0;
           flex: 1;
           display: flex;
           flex-direction: column;
