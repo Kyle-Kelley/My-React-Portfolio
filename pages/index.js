@@ -26,6 +26,7 @@ export default function Home() {
           font-family: "Permanent Marker", cursive;
           letter-spacing: 2px;
           text-align: center;
+          margin: 0 0 2em 0;
         }
         main {
           // padding: 5rem 0;
