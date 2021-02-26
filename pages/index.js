@@ -7,7 +7,7 @@ export default function Home() {
         <h1 className="name">The Kyle Kelley Show</h1>
         <iframe
           src="https://castbox.fm/app/castbox/player/id3159036?v=8.22.11&autoplay=0"
-          frameborder="0"
+          frameBorder="0"
           width="100%"
           height="500"
         ></iframe>
