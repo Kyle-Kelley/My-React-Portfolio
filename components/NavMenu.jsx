@@ -45,13 +45,8 @@ export default function NavMenu() {
           </Link>
         </MenuItem>
         <MenuItem onClick={handleClose}>
-          <Link href="/workouts">
-            <FitnessCenterIcon fontSize="large" />
-          </Link>
-        </MenuItem>
-        <MenuItem onClick={handleClose}>
-          <Link href="/store">
-            <LocalGroceryStoreIcon fontSize="large" />
+          <Link href="/projects/">
+            <HomeIcon fontSize="large" />
           </Link>
         </MenuItem>
       </Menu>
