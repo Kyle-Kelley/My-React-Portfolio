@@ -5,8 +5,7 @@ import MenuItem from "@material-ui/core/MenuItem";
 import Link from "@material-ui/core/Link";
 import MenuIcon from "@material-ui/icons/Menu";
 import HomeIcon from "@material-ui/icons/Home";
-import FitnessCenterIcon from "@material-ui/icons/FitnessCenter";
-import LocalGroceryStoreIcon from "@material-ui/icons/LocalGroceryStore";
+import EngineeringIcon from '@mui/icons-material/Engineering';
 
 export default function NavMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -46,7 +45,7 @@ export default function NavMenu() {
         </MenuItem>
         <MenuItem onClick={handleClose}>
           <Link href="/projects/">
-            <HomeIcon fontSize="large" />
+            <EngineeringIcon fontSize="large" />
           </Link>
         </MenuItem>
       </Menu>
